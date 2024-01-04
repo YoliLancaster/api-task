@@ -46,7 +46,7 @@ async function getUserData() {
   users.forEach((user) => {
     const userCell = document.createElement("div");
     userCell.className = "user-cell";
-    userCell.innerHTML = `<img class="img" src="..//img/${user.id}.jpg" alt="${user.name}">
+    userCell.innerHTML = `<img class="img" src="./img/${user.id}.jpg" alt="${user.name}">
               <div class="name">
                 <h2 class="name">${user.name}</h2>
                 <h4 class="username">${user.username}</h4>
@@ -71,7 +71,7 @@ function openModal(user) {
   const modalContent = document.createElement("div");
   modalContent.className = "modal";
   modalContent.innerHTML = `<div class="modal-content">
-          <img class="img" src="..//img/${user.id}.jpg" alt="${user.name}" />
+          <img class="img" src="./img/${user.id}.jpg" alt="${user.name}" />
           <div class="info">
             <h2>${user.name}</h2>
             <p>Username: ${user.username}</p>
